@@ -12,15 +12,15 @@
     <div class="accordeon">
       <section x-data="{isOpen: false,}">
         <button>bouton 1</button>
-        <p x-show="isOpen">Lorem ipsum dolor sit amet.</p>
+        <p x-show="isOpen" x-transition.opacity>Lorem ipsum dolor sit amet.</p>
       </section>
       <section x-data="{isOpen: false,}">
         <button>bouton 2</button>
-        <p x-show="isOpen">Odit nihil eaque asperiores illo.</p>
+        <p x-show="isOpen" x-transition.opacity>Odit nihil eaque asperiores illo.</p>
       </section>
       <section x-data="{isOpen: false,}">
         <button>bouton 3</button>
-        <p x-show="isOpen">Alias sed eligendi accusantium corporis?</p>
+        <p x-show="isOpen" x-transition.opacity>Alias sed eligendi accusantium corporis?</p>
       </section>
     </div>
   </body>
