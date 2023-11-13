@@ -12,11 +12,11 @@
     <div class="accordeon">
       <section x-data="{isOpen: false,}">
         <button @click="isOpen =! isOpen">bouton 1</button>
-        <p x-show="isOpen" x-transition.opacity>Lorem ipsum dolor sit amet.</p>
+        <p x-show="isOpen" x-transition.duration.5000ms>Lorem ipsum dolor sit amet.</p>
       </section>
       <section x-data="{isOpen: false,}">
         <button @click="isOpen =! isOpen">bouton 2</button>
-        <p x-show="isOpen" x-transition.opacity>Odit nihil eaque asperiores illo.</p>
+        <p x-show="isOpen" x-transition.duration.3000ms>Odit nihil eaque asperiores illo.</p>
       </section>
       <section x-data="{isOpen: false,}">
         <button @click="isOpen =! isOpen">bouton 3</button>
