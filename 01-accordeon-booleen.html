@@ -9,5 +9,19 @@
   </head>
   <body>
     <h1>Accordéon avec des booléens</h1>
+    <div class="accordeon">
+      <section x-data="{isOpen: false,}">
+        <button>bouton 1</button>
+        <p x-show="isOpen">Lorem ipsum dolor sit amet.</p>
+      </section>
+      <section x-data="{isOpen: false,}">
+        <button>bouton 2</button>
+        <p x-show="isOpen">Odit nihil eaque asperiores illo.</p>
+      </section>
+      <section x-data="{isOpen: false,}">
+        <button>bouton 3</button>
+        <p x-show="isOpen">Alias sed eligendi accusantium corporis?</p>
+      </section>
+    </div>
   </body>
 </html>
