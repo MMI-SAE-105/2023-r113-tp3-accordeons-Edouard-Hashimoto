@@ -10,17 +10,17 @@
   </head>
   <body>
     <h1>Accordéon avec <code>x-collapse</code></h1>
-    <div class="accordeon" x-data="{ expanded: 1 }">
+    <div class="accordeon" x-data="{ expanded: 0 }">
       <section>
         <button @click="expanded = 1">bouton 1</button>
         <p x-show="expanded === 1" x-collapse>Lorem ipsum dolor sit amet.</p>
       </section>
       <section>
-        <button  @click="expanded = 2">bouton 2</button>
+        <button @click="expanded = 2">bouton 2</button>
         <p x-show="expanded === 2" x-collapse>Cupiditate mollitia natus vero harum?</p>
       </section>
       <section>
-        <button  @click="expanded = 3">bouton 3</button>
+        <button @click="expanded = 3">bouton 3</button>
         <p x-show="expanded === 3" x-collapse>Nesciunt debitis soluta iusto repellendus!</p>
       </section>
     </div>
