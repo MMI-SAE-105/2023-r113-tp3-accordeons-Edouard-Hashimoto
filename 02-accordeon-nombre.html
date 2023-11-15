@@ -12,15 +12,15 @@
     <div class="accordeon" x-data="{isOpen: 0,}">
       <section>
         <button @click="isOpen = 1">bouton 1</button>
-        <p x-show="isOpen === 1" x-transition.duration.5000ms>Lorem ipsum dolor sit amet.</p>
+        <p x-show="isOpen === 1" x-transition.scale.origin.left>Lorem ipsum dolor sit amet.</p>
       </section>
       <section>
         <button @click="isOpen = 2">bouton 2</button>
-        <p x-show="isOpen === 2" x-transition.duration.3000ms>Odit nihil eaque asperiores illo.</p>
+        <p x-show="isOpen === 2" x-transition.scale.origin.left>Odit nihil eaque asperiores illo.</p>
       </section>
       <section>
         <button @click="isOpen = 3">bouton 3</button>
-        <p x-show="isOpen === 3" x-transition.opacity>Alias sed eligendi accusantium corporis?</p>
+        <p x-show="isOpen === 3" x-transition.scale.origin.left>Alias sed eligendi accusantium corporis?</p>
       </section>
       <section>
         <button @click="isOpen = 0">Fermer bouton</button>
