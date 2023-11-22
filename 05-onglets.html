@@ -8,7 +8,7 @@
   <title>Onglets</title>
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
   <style>
-    #onglets {
+     #onglets {
       position: relative;
       width: 100%;
       height: 100%;
@@ -19,7 +19,14 @@
       width: 100%;
       height: 100%;
     }
+    
+    .tab {
+      opacity: 0.5;
+    }
 
+    .tab.active {
+      opacity: 1;
+    }
     .panel {
       position: absolute;
       top: 0;
