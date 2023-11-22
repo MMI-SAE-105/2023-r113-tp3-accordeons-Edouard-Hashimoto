@@ -17,7 +17,7 @@
 
     #accordeon li {
      /* largeur de chaque élément replié 107px */
-     width: 107;
+     width: 107px;
      /* pour cacher le contenu dépassant de l'élément */
      overflow: hidden;
      /* pour l'animation, transition sur width */
@@ -26,16 +26,16 @@
      list-style: none;
      /* couleur de fond #eee */
      /* pour espacer les éléments, marge de 3px */
-     margin: 3;
+     margin: 3px;
      /* pour espacer le contenu, padding de 5px */
-     padding: 5;
+     padding: 5px;
      /* pour arrondir les bords de 5px */
-     border-radius: 5;
+     border-radius: 5px;
     }
 
     #accordeon li.actif {
      /* largeur de l'élément déplié 317px */
-     width: 317;
+     width: 317px;
     }
 
     #accordeon li figure {
@@ -44,7 +44,7 @@
      /* pour que les éléments soient alignés horizontalement */
      display: flex;
      /* largeur de l'élément intrérieur de 317px (= déplié) */
-     width: 317;
+     width: 317px;
     }
 
     #accordeon li figure figcaption {
@@ -70,8 +70,8 @@
   </head>
   <body>
     <h1>Accordéon horizontal</h1>
-    <ul id="accordeon">
-      <li>
+    <ul id="accordeon" x-data="{isOpen : 1}">
+      <li :class="{actif:isOpen === 1,}" @click="isOpen=1">
         <figure>
           <img src="https://picsum.photos/100?random=1" alt="" width="102">
           <figcaption>
@@ -80,7 +80,7 @@
           </figcaption>
         </figure>
       </li>
-      <li  class="actif">
+      <li  @click="isOpen = 2" :class="{actif:isOpen === 2,}">
         <figure>
           <img src="https://picsum.photos/100?random=2" alt="" width="102">
           <figcaption>
@@ -89,7 +89,7 @@
           </figcaption>
         </figure>
       </li>
-      <li>
+      <li @click="isOpen = 3" :class="{actif:isOpen === 3,}">
         <figure>
           <img src="https://picsum.photos/100?random=3" alt="" width="102">
           <figcaption>
